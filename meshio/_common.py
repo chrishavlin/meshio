@@ -81,6 +81,8 @@ num_nodes_per_cell = {
     "triangle66": 66,
     "quad121": 121,
     "tetra286": 286,
+    #
+    "lagrange_hexahedron": 27,
 }
 
 _geometric_dimension = {
@@ -147,6 +149,7 @@ _geometric_dimension = {
     "wedge288": 3,
     "wedge405": 3,
     "wedge550": 3,
+    "lagrange_hexahedron":3,
 }
 
 
@@ -220,6 +223,7 @@ vtk_to_meshio_type = {
     34: "triangle7",
     35: "line4",
     42: "polyhedron",
+    72:"lagrange_hexahedron",
     #
     # 60: VTK_HIGHER_ORDER_EDGE,
     # 61: VTK_HIGHER_ORDER_TRIANGLE,
@@ -228,7 +232,7 @@ vtk_to_meshio_type = {
     # 64: VTK_HIGHER_ORDER_TETRAHEDRON,
     # 65: VTK_HIGHER_ORDER_WEDGE,
     # 66: VTK_HIGHER_ORDER_PYRAMID,
-    # 67: VTK_HIGHER_ORDER_HEXAHEDRON,
+    # 67: VTK_HIGHER_ORDER_HEXAHEDRON,    
 }
 meshio_to_vtk_type = {v: k for k, v in vtk_to_meshio_type.items()}
 
