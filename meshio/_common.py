@@ -81,6 +81,8 @@ num_nodes_per_cell = {
     "triangle66": 66,
     "quad121": 121,
     "tetra286": 286,
+    #
+    "lagrange_hexahedron": 27,
 }
 
 _topological_dimension = {
@@ -147,6 +149,7 @@ _topological_dimension = {
     "wedge288": 3,
     "wedge405": 3,
     "wedge550": 3,
+    "lagrange_hexahedron": 3,
 }
 
 
@@ -234,7 +237,7 @@ vtk_to_meshio_type = {
     69: "VTK_LAGRANGE_TRIANGLE",
     70: "VTK_LAGRANGE_QUADRILATERAL",
     71: "VTK_LAGRANGE_TETRAHEDRON",
-    72: "VTK_LAGRANGE_HEXAHEDRON",
+    72: "lagrange_hexahedron",
     73: "VTK_LAGRANGE_WEDGE",
     74: "VTK_LAGRANGE_PYRAMID",
     # Arbitrary order Bezier elements
